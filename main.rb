@@ -1,5 +1,7 @@
 require 'sinatra'
 
 post '/' do
-	request.body
+	splitArray = request.body.split(',')
+	splitArray.to_json
+	#splitArray.each {|x| }
 end
